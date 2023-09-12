@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Ejercicio 1
+// Crear un array vacío y generar 10 números al azar
+let numerosAleatorios = [];
+for (let i = 0; i < 10; i++) {
+  let numero = Math.floor(Math.random() * 100); // Generar números aleatorios entre 0 y 99
+  numerosAleatorios.push(numero); // Agregar el número al array
+}
+console.log("Array de números aleatorios:", numerosAleatorios);
+
+// Ejercicio 2
+// Pedir al usuario un string de números separados por coma y convertirlo en un array
+let entradaUsuario = prompt("Ingresa números separados por coma:");
+let numerosConvertidos = entradaUsuario.split(",").map(Number);
+console.log("Array de números ingresados por el usuario:", numerosConvertidos);
+
+// Ejercicio 3
+// Array dado: [10, 40, 30, 20, 15, 5]
+let arreglo = [10, 40, 30, 20, 15, 5];
+arreglo.sort(function(a, b) {
+  return a - b; // Ordenar de menor a mayor
+});
+let numeroMenor = arreglo[0];
+let numeroMayor = arreglo[arreglo.length - 1];
+console.log("Arreglo ordenado de menor a mayor:", arreglo);
+console.log("Número menor:", numeroMenor);
+console.log("Número mayor:", numeroMayor);
+
+</script>
+</html>
